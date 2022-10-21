@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+h3 {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+hr {
+    color: #dcdcde;
+} 
+textarea,
+select {
+  width: 330px;
+}
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.mail {
+    height: 125px;
+}
+
+.forma1 {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+    width: 330px;
+}
+.city {
+    display: inline-block;
+}
+
+.option1 {
+    padding: 10px;
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    border-color: #cccccc;
+}
+.button {
+    background-color: #6e6f77;
+    border: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkbox2 {
+    border-collapse: collapse;
+}
+.input2 {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.forma3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div3 {
+    margin-right: 80px;
+    position: relative;
+}
+.before:before {
+    content: ""
+}
+
+.option4,
+.option5,
+.p4 {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.p5 {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.forma5 {
+    display: table;
+}
+
+.comeback {
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.button {
+    color: #fff;
+}
+
+.table {
+    display: table;
+    width: 473px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+.table>.row {
+    display: table-row;
+}
+.cell {
+    padding-bottom: 0;
+}
+
+.table>.row>.cell {
+    display: table-cell;
+}
+
