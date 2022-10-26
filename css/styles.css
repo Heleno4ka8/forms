@@ -63,11 +63,13 @@ h3 {
 
 hr {
     color: #dcdcde;
-} 
+}
+
 textarea,
 select {
-  width: 330px;
+    width: 330px;
 }
+
 .input {
     box-sizing: border-box;
     width: 100%;
@@ -75,41 +77,49 @@ select {
     border: 1px solid #cccccc;
     border-radius: 3px;
 }
+
 .mail {
     height: 125px;
 }
 
-.forma1 {
+.forma1,
+.forma4 {
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
     width: 330px;
 }
+
 .city {
     display: inline-block;
 }
 
-.option1 {
-    padding: 10px;
+.option1,
+.option4,
+.option5 {
+    padding: 9px;
     display: inline-block;
     -webkit-appearance: none;
     appearance: none;
     border-radius: 3px;
     border-color: #cccccc;
 }
+
 .button {
     background-color: #6e6f77;
     border: none;
 }
+
 .flex {
     display: flex;
-    justify-content: space-around;
+    align-items: stretch;
 }
 
 .checkbox2 {
     border-collapse: collapse;
 }
+
 .input2 {
     font-size: 14px;
     color: #b3b3b3;
@@ -119,13 +129,15 @@ select {
 
 .forma3 {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    ;
 }
 
 .div3 {
     margin-right: 80px;
     position: relative;
 }
+
 .before:before {
     content: ""
 }
@@ -139,6 +151,18 @@ select {
     font-family: "Roboto";
 }
 
+.p4 {
+    color: #1f222c;
+}
+
+.file {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
 .p5 {
     font-size: 13px;
     color: #b3b3b3;
@@ -150,16 +174,31 @@ select {
     display: table;
 }
 
+.input1 {
+    width: 445px;
+    border-radius: 3px;
+    padding: 9px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
 .comeback {
     font-size: 14px;
     color: #6e6f77;
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
+    width: 180px;
+    background-color: #fff;
 }
 
 .button {
     color: #fff;
+    width: 330px;
+    padding: 14px 0 14px 0;
+    border-radius: 3px;
+    background-color: #12d661;
 }
 
 .table {
@@ -169,9 +208,11 @@ select {
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
 }
+
 .table>.row {
     display: table-row;
 }
+
 .cell {
     padding-bottom: 0;
 }
@@ -179,4 +220,3 @@ select {
 .table>.row>.cell {
     display: table-cell;
 }
-

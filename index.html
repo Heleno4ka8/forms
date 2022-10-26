@@ -132,44 +132,44 @@
         </div>
         <hr>
         <h2>04. форма таблицею</h2>
-        <form>
+        <form class="forma4">
             <h3>Заповніть усі необхідні поля</h3>
             <p class="p4">ФІО:
                 <label class="input2">
-                    <input class="checks" type="text" placeholder="Введіть ім’я">
+                    <input class="checks input" type="text" placeholder="Введіть ім’я">
                 </label>
             </p>
-            <p>Пароль:
+            <p class="p4">Пароль:
                 <label class="input2">
-                    <input class="checks" type="text" placeholder="Введіть не менше 6 символів">
+                    <input class="checks input" type="text" placeholder="Введіть не менше 6 символів">
                 </label>
             </p>
-            <p>Місто:
+            <p class="p4">Місто:
                 <label for="city">
-                    <select>
-                        <option class="checks option4" id="city">Хмельницький</option>
+                    <select class="input checks option4">
+                        <option id="city">Хмельницький</option>
                     </select>
                 </label>
             </p>
-            <p>Стать:
+            <p class="p4">Стать:
                 <label class="p4" for="male-female">
                     <input type="radio" id="male-female">Чоловік
                     <input type="radio" id="male-female" checked>Жінка
                 </label>
             </p>
-            <p>Фото:
+            <p class="p4">Фото:
                 <label for="file">
-                    <input type="file" id="file" placeholder="Виберіть файл">
+                    <input class="file" type="file" id="file" placeholder="Виберіть файл">
                 </label>
             </p>
-            <p>Коментарій:
+            <p class="p4">Коментарій:
                 <label for="introduction">
-                    <textarea id="introduction" placeholder="Введіть текст повідомлення"></textarea>
+                    <textarea class="mail input" id="introduction" placeholder="Введіть текст повідомлення"></textarea>
                 </label>
             </p>
-            <p class="button">
+            <p>
                 <label>
-                    <button>Зареєструватися</button>
+                    <input class="button" type="submit" value="Зареєструватися">
                 </label>
             </p>
         </form>
@@ -196,7 +196,7 @@
                     </select>
                 </label>
                 <label class="p5">
-                    Адреса<input class="input" type="text">
+                    Адреса<input class="input1" type="text">
                 </label>
             </p>
             <div class="forma5">
@@ -210,9 +210,9 @@
                         </label>
                         <label class="p5">
                             <br>
-                            Поштовий індекс<input type="text">
+                            Поштовий індекс<input class="input" type="text">
                         </label>
-                        <label>
+                        <label class="p5">
                             <input class="input" type="text">
                         </label>
                 </div>
@@ -225,10 +225,10 @@
             <hr>
             <p>
                 <label class="comeback">
-                    <input class="input" type="button" value="Повернутися назад">
+                    <input class="input comeback" type="button" value="Повернутися назад">
                 </label>
                 <label>
-                    <input class="button input" type="submit" disabled="Оформити покупку">
+                    <input class="button input" type="submit" value="Оформити покупку">
                 </label>
             </p>
         </form>
