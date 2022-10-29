@@ -67,7 +67,7 @@ hr {
 
 textarea,
 select {
-    width: 330px;
+    width: 100%;
 }
 
 .input {
@@ -91,13 +91,7 @@ select {
     width: 330px;
 }
 
-.city {
-    display: inline-block;
-}
-
-.option1,
-.option4,
-.option5 {
+.option {
     padding: 9px;
     display: inline-block;
     -webkit-appearance: none;
@@ -142,8 +136,6 @@ select {
     content: ""
 }
 
-.option4,
-.option5,
 .p4 {
     font-size: 14px;
     color: #1f222c;
@@ -175,7 +167,14 @@ select {
 }
 
 .input1 {
-    width: 445px;
+    border-radius: 3px;
+    padding: 9px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.inputt {
+    width: 33.3%;
     border-radius: 3px;
     padding: 9px;
     background-color: #ffffff;
@@ -191,6 +190,8 @@ select {
     text-align: center;
     width: 180px;
     background-color: #fff;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .button {
@@ -203,7 +204,6 @@ select {
 
 .table {
     display: table;
-    width: 473px;
     border-radius: 3px;
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
