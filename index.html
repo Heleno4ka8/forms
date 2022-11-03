@@ -80,7 +80,7 @@
             </div>
             <div class="table">
                 <div class="row">
-                    <p class="cell">Статус</p>
+                    <p class="cell input2">Статус</p>
                     <p class="cell">
                         <label for="new">
                             <input class="checks" type="checkbox" id="new">Новинки
@@ -94,7 +94,7 @@
                     </p>
                 </div>
                 <div class="row">
-                    <p class="cell">Дата</p>
+                    <p class="cell input2">Дата</p>
                     <p class="cell">
                         <label for="data">
                             <input type="date" id="data" value="2018-03-17">
@@ -107,22 +107,28 @@
         <h2>03. стилізовані чекбокси</h2>
         <div class="forma3">
             <div class="div3">
-                <p class="before"><img src="#" alt="man">Чоловік</p>
-                <p class="before"><img src="#" alt="woman">Жінка</p>
+                <p>
+                    <input type="radio">
+                    <label class="before">Чоловік</label>
+                </p>
+                <p>
+                    <input type="radio" checked>
+                    <label class="before">Жінка</label>
+                </p>
             </div>
             <form>
                 <div class="checkbox3">
-                    <p>
+                    <p class="p3">
                         <label for="news">
                             <input class="checks" type="checkbox" id="news">Отримувати новини
                         </label>
                     </p>
-                    <p>
+                    <p class="p3">
                         <label for="buy">
                             <input class="checks" type="checkbox" id="buy">Купити додому ковбаси
                         </label>
                     </p>
-                    <p>
+                    <p class="p3">
                         <label for="light">
                             <input class="checks" type="checkbox" id="light">Включити світло
                         </label>
@@ -137,7 +143,8 @@
             <table>
                 <tr>
                     <td>ФІО:</td>
-                    <td><label><input class="input" type="text" placeholder="Введіть ім’я"></label></td>
+                    <td class="forma4"><label class="forma4"><input class="input" type="text"
+                                placeholder="Введіть ім’я"></label></td>
                 </tr>
                 <tr>
                     <td>Пароль:</td>
@@ -146,20 +153,24 @@
                 </tr>
                 <tr>
                     <td>Місто:</td>
-                    <td><select class="input option">
+                    <td>
+                        <select class="input option">
                             <option>Хмельницький</option>
-                        </select></td>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Стать:</td>
                     <td>
                         <label><input class="input" type="radio" checked>Чоловік</label>
+                    </td>
+                    <td>
                         <label><input class="input" type="radio">Жінка</label>
                     </td>
                 </tr>
-                <tr class="none">
+                <tr>
                     <td>Фото:</td>
-                    <td><label><input class="input" type="file" plaseholder="Виберіть файл"></label></td>
+                    <td><label><input class="input none" type="file" plaseholder="Виберіть файл"></label></td>
                 </tr>
                 <tr>
                     <td>Коментарій:</td>
@@ -176,59 +187,64 @@
         <h2>05. форма таблицею</h2>
         <form>
             <h3>Оформлення заявки</h3>
-            <table>
-                <tr>
-                    <td>
+            <table class="forma5">
+                <tr class="tr">
+                    <td class="td">
                         <label for="surname">
-                            Прізвище та ім’я<input type="text" class="input" id="surname" placeholder="Василь Вірастюк">
+                            Прізвище та ім’я<input type="text" class="input placeholder" id="surname"
+                                placeholder="Василь Вірастюк">
                         </label>
                     </td>
-                    <td>
+                    <td class="td">
                         <label for="input-post">
                             Ел. пошта<input class="input" type="text" id="input-post">
                         </label>
+                    </td>
+                    <td class="td">
                         <label for="input-phone">
                             Телефон<input class="input" type="text" id="input-post">
                         </label>
                     </td>
                 </tr>
             </table>
-            <hr>
-            <table>
-                <tr>
-                    <td>
+            <hr class="hr">
+            <table class="forma5">
+                <tr class="tr">
+                    <td class="td">
                         <label>Країна
-                            <select class="option inputt">
+                            <select class="option input">
                                 <option>Індонезія</option>
                             </select>
                         </label>
                     </td>
-                    <td>
+                    <td colspan="2">
                         <label>
-                            Адреса<input class="inputt" type="text">
+                            Адреса<input class="input" type="text">
                         </label>
                     </td>
                 </tr>
-                        <tr>
-                            <td>
-                                <label>
-                                    Місто<input class="inputt" type="text">
-                                </label>
-                            </td>
-                                <td>
-                                    <label>
-                                        Будинок<input class="inputt" type="text">
-                                    </label>
-                                    <label>
-                                        Поштовий індекс<input class="inputt" type="text">
-                                    </label>
-                                </td>
-                        </tr>
-            </table>
+                <tr class="tr">
+                    <td class="td">
                         <label>
-                            <input class="input" type="checkbox"> Я погоджуюсь з правилами оплати та доставки товару
+                            Місто<input class="input" type="text">
                         </label>
-            <hr>
+                    </td>
+                    <td class="td">
+                        <label>
+                            Будинок<input class="input" type="text">
+                        </label>
+                    </td>
+                    <td class="td">
+                        <label>
+                            Поштовий індекс<input class="input" type="text">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <label  class="p3">
+                <input type="checkbox"> Я погоджуюсь з правилами оплати та доставки товару
+            </label>
+            <hr class="hr">
             <p>
                 <label class="comeback">
                     <input type="button" value="Повернутися назад">
@@ -240,7 +256,7 @@
         </form>
         <hr>
         <h2>06. фіксована форма</h2>
-        <form>
+        <form6 class="forma1">
             <label>
                 Логін<input class="input" type="text">
             </label>
@@ -258,7 +274,7 @@
                     <input class="button" type="submit" value="Увійти">
                 </label>
             </p>
-        </form>
+            </form>
     </body>
 
     </html>
