@@ -46,17 +46,17 @@
         <form class="forma2 flex">
             <div class="radio2">
                 <p>
-                    <input type="radio" id="delivery" checked>
+                    <input class="none checks delivery" type="radio" id="delivery" checked>
                     <label for="delivery">Нова Пошта
                     </label>
                 </p>
                 <p>
-                    <input type="radio" id="courier">
+                    <input class="none checks courier" type="radio" id="courier">
                     <label for="courier">Кур’єр
                     </label>
                 </p>
                 <p>
-                    <input type="radio" id="export">
+                    <input class="none checks export" type="radio" id="export">
                     <label class="input2" for="export">Самовивіз
                     </label>
                 </p>
@@ -164,8 +164,10 @@
                 <tr>
                     <td class="name">Стать:</td>
                     <td>
-                        <label><input type="radio" checked>Чоловік</label>
-                        <label class="woman"><input type="radio">Жінка</label>
+                        <input id="men" type="radio" class="none checks radiomen">
+                        <label for="men">Чоловік</label>
+                        <input id="women" type="radio" class="none checks radiowomen" checked>
+                        <label for="women" class="woman">Жінка</label>
                     </td>
                 </tr>
                 <tr>
@@ -184,7 +186,7 @@
         </form>
         <hr>
         <h2>05. форма таблицею</h2>
-        <form>
+        <forma class="forma5">
             <h3>Оформлення заявки</h3>
             <table class="forma5">
                 <tr class="tr">
@@ -216,7 +218,7 @@
                             </select>
                         </label>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" class="tdd">
                         <label>
                             Адреса<input class="input" type="text">
                         </label>
@@ -240,28 +242,27 @@
                     </td>
                 </tr>
             </table>
-            <label  class="p3">
-                <input type="checkbox"> Я погоджуюсь з правилами оплати та доставки товару
+            <input id="ok" class="input checks" type="checkbox"> 
+            <label for="for" class="p3">Я погоджуюсь з правилами оплати та доставки товару
             </label>
             <hr class="hr">
-            <p>
+            <p class="knopki">
                 <label class="comeback">
-                    <input type="button" value="Повернутися назад">
+                    <input type="button" class="buttonn p5" value="Повернутися назад">
                 </label>
                 <label>
-                    <input class="button" type="submit" value="Оформити покупку">
+                    <input class="button buton" type="submit" value="Оформити покупку">
                 </label>
             </p>
         </form>
-        <hr>
         <div>
             <h2>06. фіксована форма</h2>
-            <form class="forma1">
-                <label>
-                    Логін<input class="input" type="text">
+            <form class="forma6">
+                <label>Логін
+                    <input class="input" type="text">
                 </label>
-                <label>
-                    Пароль<input class="input" type="password">
+                <label>Пароль
+                    <input class="input" type="password">
                 </label>
                 <p>Забули пароль?</p>
                 <p>
@@ -271,7 +272,7 @@
                 </p>
                 <p>
                     <label>
-                        <input class="button" type="submit" value="Увійти">
+                        <input class="button knopka buton" type="submit" value="Увійти">
                     </label>
                 </p>
                 </form>
