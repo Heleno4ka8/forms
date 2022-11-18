@@ -46,34 +46,34 @@
         <form class="forma2 flex">
             <div class="radio2">
                 <p>
-                    <input class="none checks delivery" type="radio" id="delivery" checked>
+                    <input class="none delivery" type="radio" name="post" id="delivery" checked>
                     <label for="delivery">Нова Пошта
                     </label>
                 </p>
                 <p>
-                    <input class="none checks courier" type="radio" id="courier">
+                    <input class="none delivery" type="radio" name="post" id="courier">
                     <label for="courier">Кур’єр
                     </label>
                 </p>
                 <p>
-                    <input class="none checks export" type="radio" id="export">
+                    <input class="none delivery" type="radio" name="post" id="export" disabled>
                     <label class="input2" for="export">Самовивіз
                     </label>
                 </p>
             </div>
             <div class="checkbox2">
                 <p>
-                    <input type="checkbox" class="checks" id="ruls">
+                    <input type="checkbox" id="ruls" class="none kub">
                     <label for="ruls">Прочитав умови договору
                     </label>
                 </p>
                 <p>
-                    <input type="checkbox" class="checks" id="pdv">
+                    <input type="checkbox" id="pdv" class="none kub">
                     <label for="pdv">Згідний з ПДВ 9%
                     </label>
                 </p>
                 <p>
-                    <input type="checkbox" class="checks" id="post">
+                    <input type="checkbox" id="post" class="none kub" disabled>
                     <label class="input2" for="post">Отримувати новини на ел. пошту
                     </label>
                 </p>
@@ -82,13 +82,13 @@
                 <div class="row">
                     <p class="cell input2">Статус</p>
                     <p class="cell">
-                        <input class="checks" type="checkbox" id="new">
+                        <input type="checkbox" id="new" class="kub none">
                         <label for="new">Новинки
                         </label>
-                        <input class="checks" type="checkbox" id="sale">
+                        <input type="checkbox" id="sale" class="kub none">
                         <label for="sale">Акційні товари
                         </label>
-                        <input class="checks" type="checkbox" id="stock">
+                        <input type="checkbox" id="stock" class="kub none">
                         <label for="stock">Розпродаж
                         </label>
                     </p>
@@ -96,8 +96,8 @@
                 <div class="row">
                     <p class="cell input2">Дата</p>
                     <p class="cell">
-                        <label for="data">
-                            <input type="date" id="data" value="2018-03-17">
+                        <label for="date">
+                            <input class="date" type="date" id="date" value="2018-03-17">
                         </label>
                     </p>
                 </div>
@@ -107,11 +107,11 @@
         <h2>03. стилізовані чекбокси</h2>
         <div class="forma3">
             <div class="div3">
-                <p>
+                <p class="paragraf">
                     <input id="man" class="checks" type="radio">
                     <label for="man" class="befor">Чоловік</label>
                 </p>
-                <p>
+                <p class="paragraf">
                     <input id="woman" class="checks" type="radio" checked>
                     <label for="woman" class="before">Жінка</label>
                 </p>
@@ -119,17 +119,17 @@
             <form>
                 <div class="checkbox3">
                     <p class="p3">
-                        <input class="checks" type="checkbox" id="news">
+                        <input class="checkss" type="checkbox" id="news">
                         <label class="slider" for="news">Отримувати новини
                         </label>
                     </p>
                     <p class="p3">
-                        <input class="checks" type="checkbox" id="buy">
+                        <input class="checkss" type="checkbox" id="buy">
                         <label class="slider" for="buy">Купити додому ковбаси
                         </label>
                     </p>
                     <p class="p3">
-                        <input class="checks" type="checkbox" id="light">
+                        <input class="checkss" type="checkbox" id="light">
                         <label class="slider" for="light">Включити світло
                         </label>
                     </p>
@@ -164,9 +164,9 @@
                 <tr>
                     <td class="name">Стать:</td>
                     <td>
-                        <input id="men" type="radio" class="none checks radiomen">
+                        <input id="men" type="radio" name="male" class="none checks radiomen">
                         <label for="men">Чоловік</label>
-                        <input id="women" type="radio" class="none checks radiowomen" checked>
+                        <input id="women" type="radio" name="male" class="none checks radiowomen" checked>
                         <label for="women" class="woman">Жінка</label>
                     </td>
                 </tr>
