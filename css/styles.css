@@ -112,7 +112,6 @@ input {
     background-color: #fff;
     left: 0px;
     top: 0px;
-
 }
 .kub:checked+label:before {
     content:"";
@@ -145,6 +144,9 @@ input {
     align-items: center;
 }
 
+.checkss+label {
+    padding-left: 65px;
+}
 .checkss+label:before {
     content: "";
     position: absolute;
@@ -153,7 +155,7 @@ input {
     border-radius: 12px;
     background-color: #cfcfd1;
     background-repeat: no-repeat;
-    left: -50px;
+    left: 0px;
     top: -4px;
 }
 
@@ -165,10 +167,16 @@ input {
     border-radius: 50%;
     background-color: #fff;
     background-repeat: no-repeat;
-    left: -29px;
+    left: 0;
     top: -2.5px;
 }
+.checkss:checked+label:before {
+    background-color: #3e6aff;
+}
 
+.checkss:checked+label:after {
+    left: 21px;
+}
 .none {
     display: none;
 }
@@ -337,7 +345,6 @@ input {
 
 .p3 {
     color: #1f222c;
-    margin: 30px;
     font-size: 14px;
 }
 
@@ -415,36 +422,6 @@ input {
     color: #1f222c;
 }
 
-.radiomen+label:before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    background-image: url(../images/man.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: -1px;
-}
-
-.radiowomen+label:before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    background-image: url(../images/woman.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: -1px;
-}
-
 .delivery+label:before {
     border-radius: 50%;
 }
@@ -455,22 +432,6 @@ input {
 
 .export+label:before {
     border-radius: 50%;
-}
-
-.radiomen+label:before {
-    border-radius: 50%;
-}
-
-.radiowomen+label:before {
-    border-radius: 50%;
-}
-
-.radiomen:checked+label::before {
-    background-color: #3e6aff;
-}
-
-.radiowomen:checked+label::before {
-    background-color: #3e6aff;
 }
 
 .comeback {
@@ -514,7 +475,6 @@ input {
     visibility: hidden;
     display: none;
 }
-
 .date {
     padding: 10px 15px;
     width: 150px;
