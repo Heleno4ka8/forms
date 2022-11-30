@@ -37,7 +37,7 @@
             </p>
             <p>
                 <label for="button">
-                    <input class="button" type="submit" id="button" value="Зареєструватися">
+                    <input class="button kursor" type="submit" id="button" value="Зареєструватися">
                 </label>
             </p>
         </form>
@@ -47,34 +47,34 @@
             <div class="radio2">
                 <p>
                     <input class="none delivery" type="radio" name="post" id="delivery" checked>
-                    <label for="delivery">Нова Пошта
+                    <label class="label" for="delivery">Нова Пошта
                     </label>
                 </p>
                 <p>
                     <input class="none delivery" type="radio" name="post" id="courier">
-                    <label for="courier">Кур’єр
+                    <label class="label" for="courier">Кур’єр
                     </label>
                 </p>
                 <p>
                     <input class="none delivery" type="radio" name="post" id="export" disabled>
-                    <label class="input2" for="export">Самовивіз
+                    <label class="input2 label" for="export">Самовивіз
                     </label>
                 </p>
             </div>
             <div class="checkbox2">
                 <p>
                     <input type="checkbox" id="ruls" class="none kub">
-                    <label for="ruls">Прочитав умови договору
+                    <label for="ruls label">Прочитав умови договору
                     </label>
                 </p>
                 <p>
                     <input type="checkbox" id="pdv" class="none kub">
-                    <label for="pdv">Згідний з ПДВ 9%
+                    <label for="pdv label">Згідний з ПДВ 9%
                     </label>
                 </p>
                 <p>
                     <input type="checkbox" id="post" class="none kub" disabled>
-                    <label class="input2" for="post">Отримувати новини на ел. пошту
+                    <label class="input2 label" for="post">Отримувати новини на ел. пошту
                     </label>
                 </p>
             </div>
@@ -83,13 +83,13 @@
                     <p class="cell input2">Статус</p>
                     <p class="cell">
                         <input type="checkbox" id="new" class="kub none">
-                        <label for="new">Новинки
+                        <label class="label" for="new">Новинки
                         </label>
                         <input type="checkbox" id="sale" class="kub none">
-                        <label for="sale">Акційні товари
+                        <label class="label" for="sale">Акційні товари
                         </label>
                         <input type="checkbox" id="stock" class="kub none">
-                        <label for="stock">Розпродаж
+                        <label class="label" for="stock">Розпродаж
                         </label>
                     </p>
                 </div>
@@ -108,29 +108,29 @@
         <div class="forma3">
             <div class="div3">
                 <p class="paragraf">
-                    <input id="man" class="checks" type="radio">
-                    <label for="man" class="befor">Чоловік</label>
+                    <input id="man" name="img" class="checks imagemal" type="radio">
+                    <label for="man" class="befor label">Чоловік</label>
                 </p>
                 <p class="paragraf">
-                    <input id="woman" class="checks" type="radio" checked>
-                    <label for="woman" class="before">Жінка</label>
+                    <input id="woman" name="img" class="checks imagefem" type="radio" checked>
+                    <label for="woman" class="before label">Жінка</label>
                 </p>
             </div>
             <form>
                 <div class="checkbox3">
                     <p class="p3">
                         <input class="checkss none" type="checkbox" id="news">
-                        <label class="slider" for="news">Отримувати новини
+                        <label class="slider label" for="news">Отримувати новини
                         </label>
                     </p>
                     <p class="p3">
                         <input class="checkss none" type="checkbox" id="buy">
-                        <label class="slider" for="buy">Купити додому ковбаси
+                        <label class="slider label" for="buy">Купити додому ковбаси
                         </label>
                     </p>
                     <p class="p3">
                         <input class="checkss none" type="checkbox" id="light">
-                        <label class="slider" for="light">Включити світло
+                        <label class="slider label" for="light">Включити світло
                         </label>
                     </p>
                 </div>
@@ -143,19 +143,19 @@
             <table>
                 <tr>
                     <td class="name">ФІО:</td>
-                    <td class="forma4">
+                    <td class="forma4 komirka">
                         <input id="typing" class="input" type="text" placeholder="Введіть ім’я">
                         <label for="typing" class="forma4"></label>
                     </td>
                 </tr>
                 <tr>
                     <td class="name">Пароль:</td>
-                    <td><label><input class="input" type="password" placeholder="Введіть не менше 6 символів"></label>
+                    <td class="komirka"><label><input class="input" type="password" placeholder="Введіть не менше 6 символів"></label>
                     </td>
                 </tr>
                 <tr>
                     <td class="name">Місто:</td>
-                    <td>
+                    <td class="komirka">
                         <select class="input option">
                             <option>Хмельницький</option>
                         </select>
@@ -163,7 +163,7 @@
                 </tr>
                 <tr>
                     <td class="name">Стать:</td>
-                    <td>
+                    <td class="komirka">
                         <input id="men" type="radio" name="male" class="none delivery">
                         <label for="men">Чоловік</label>
                         <input id="women" type="radio" name="male" class="none delivery" checked>
@@ -172,15 +172,15 @@
                 </tr>
                 <tr>
                     <td class="name">Фото:</td>
-                    <td><label class="file" for="download"><input id="download" class="none" type="file" plaseholder="Виберіть файл">Виберіть файл</label></td>
+                    <td class="komirka"><label class="file kursor" for="download"><input id="download" class="none" type="file" plaseholder="Виберіть файл">Виберіть файл</label></td>
                 </tr>
                 <tr>
                     <td class="name">Коментарій:</td>
-                    <td><textarea class="mail input" placeholder="Введіть текст повідомлення"></textarea></td>
+                    <td class="komirka"><textarea class="mail input" placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
                 <tr>
                     <td class="name"></td>
-                    <td><label for="button"><input class="button" type="submit" id="button" value="Зареєструватися"></label></td>
+                    <td class="komirka"><label for="button"><input class="button kursor" type="submit" id="button" value="Зареєструватися"></label></td>
                 </tr>
             </table>
         </form>
@@ -243,19 +243,19 @@
                 </tr>
             </table>
             <input id="ok" class="kub none" type="checkbox"> 
-            <label for="ok" class="p3">Я погоджуюсь з правилами оплати та доставки товару
+            <label for="ok" class="p3 label">Я погоджуюсь з правилами оплати та доставки товару
             </label>
             <hr class="hr">
             <p class="knopki">
                 <label class="comeback">
-                    <input type="button" class="buttonn p5" value="Повернутися назад">
+                    <input type="reset" class="reset p5 kursor" value="Повернутися назад">
                 </label>
                 <label>
-                    <input class="button buton" type="submit" value="Оформити покупку">
+                    <input class="button buton kursor" type="submit" value="Оформити покупку">
                 </label>
             </p>
         </form>
-        <div>
+        <div class="fix">
             <h2>06. фіксована форма</h2>
             <form class="forma6">
                 <label>Логін
@@ -264,15 +264,15 @@
                 <label>Пароль
                     <input class="input" type="password">
                 </label>
-                <p>Забули пароль?</p>
+                <p><a href="#" title="якщо забули пароль" class="parol kursor">Забули пароль?</a></p>
                 <p>
-                    <input id="cubik" class="input checks" type="checkbox">
-                    <label for="cubik" class="p6">Запам’ятати пароль
+                    <input id="cubik" class="input none kub" type="checkbox">
+                    <label for="cubik" class="p6 label">Запам’ятати пароль
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="button knopka buton" type="submit" value="Увійти">
+                        <input class="button knopka buton kursor" type="submit" value="Увійти">
                     </label>
                 </p>
                 </form>
