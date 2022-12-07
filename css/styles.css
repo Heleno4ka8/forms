@@ -29,7 +29,7 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 14px;
 }
 
@@ -67,6 +67,8 @@ hr {
 }
 textarea {
     resize: vertical;
+    font-family: "Roboto";
+    
 }
 
 textarea,
@@ -552,7 +554,9 @@ input {
     width: 150px;
     border: 1px solid transparent;
 }
-
+.date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
 .date {
     content: "";
     background-image: url(../images/calendar.svg);
