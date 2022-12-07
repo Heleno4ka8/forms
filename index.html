@@ -15,24 +15,24 @@
         <form class="forma1" action="php/sendmail.php" method="post">
             <p>
                 <label for="name">
-                    <input class="input" type="text" id="name" name="name" placeholder="Введіть ім’я">
+                    <input class="input focus" type="text" maxlength="25" id="name" name="name" placeholder="Введіть ім’я">
                 </label>
             </p>
             <p>
                 <label for="email">
-                    <input class="input" type="text" id="email" name="email" placeholder="Email">
+                    <input class="input focus" type="email" id="email" name="email" placeholder="Email">
                 </label>
             </p>
             <p>
                 <label for="city" class="city">
-                    <select id="city" class="option input">
+                    <select id="city" class="option input focus">
                         <option>Ваше місто</option>
                     </select>
                 </label>
             </p>
             <p>
                 <label for="mailadress">
-                    <textarea class="mail input" id="mailadress" placeholder="Email"></textarea>
+                    <textarea class="mail input focus" maxlength="150" id="mailadress" placeholder="Email"></textarea>
                 </label>
             </p>
             <p>
@@ -46,17 +46,17 @@
         <form class="forma2 flex">
             <div class="radio2">
                 <p>
-                    <input class="none delivery" type="radio" name="post" id="delivery" checked>
+                    <input class="none delivery kub" type="radio" name="post" id="delivery" checked>
                     <label class="label" for="delivery">Нова Пошта
                     </label>
                 </p>
                 <p>
-                    <input class="none delivery" type="radio" name="post" id="courier">
+                    <input class="none delivery kub" type="radio" name="post" id="courier">
                     <label class="label" for="courier">Кур’єр
                     </label>
                 </p>
                 <p>
-                    <input class="none delivery" type="radio" name="post" id="export" disabled>
+                    <input class="none delivery kub" type="radio" name="post" id="export" disabled>
                     <label class="input2 label" for="export">Самовивіз
                     </label>
                 </p>
@@ -64,12 +64,12 @@
             <div class="checkbox2">
                 <p>
                     <input type="checkbox" id="ruls" class="none kub">
-                    <label for="ruls label">Прочитав умови договору
+                    <label class="label" for="ruls">Прочитав умови договору
                     </label>
                 </p>
                 <p>
                     <input type="checkbox" id="pdv" class="none kub">
-                    <label for="pdv label">Згідний з ПДВ 9%
+                    <label class="label" for="pdv">Згідний з ПДВ 9%
                     </label>
                 </p>
                 <p>
@@ -97,7 +97,7 @@
                     <p class="cell input2">Дата</p>
                     <p class="cell">
                         <label for="date">
-                            <input class="date" type="date" id="date" value="2018-03-17">
+                            <input class="date focus" maxlength="25" type="date" id="date" value="2018-03-17">
                         </label>
                     </p>
                 </div>
@@ -144,20 +144,27 @@
                 <tr>
                     <td class="name">ФІО:</td>
                     <td class="forma4 komirka">
-                        <input id="typing" class="input" type="text" placeholder="Введіть ім’я">
+                        <input id="typing" class="input focus" maxlength="25" type="text" placeholder="Введіть ім’я">
                         <label for="typing" class="forma4"></label>
                     </td>
                 </tr>
                 <tr>
                     <td class="name">Пароль:</td>
-                    <td class="komirka"><label><input class="input" type="password" placeholder="Введіть не менше 6 символів"></label>
+                    <td class="komirka"><label><input class="input focus" maxlength="25" type="password" placeholder="Введіть не менше 6 символів"></label>
                     </td>
                 </tr>
                 <tr>
                     <td class="name">Місто:</td>
                     <td class="komirka">
-                        <select class="input option">
+                        <select class="input option focus">
                             <option>Хмельницький</option>
+                            <option>Житомир</option>
+                            <option>Миколаїв</option>
+                            <option>Суми</option>
+                            <option>Полтава</option>
+                            <option>Кривий Ріг</option>
+                            <option>Одеса</option>
+                            <option>Рівне</option>
                         </select>
                     </td>
                 </tr>
@@ -165,9 +172,9 @@
                     <td class="name">Стать:</td>
                     <td class="komirka">
                         <input id="men" type="radio" name="male" class="none delivery">
-                        <label for="men">Чоловік</label>
+                        <label class="label" for="men">Чоловік</label>
                         <input id="women" type="radio" name="male" class="none delivery" checked>
-                        <label for="women" class="woman">Жінка</label>
+                        <label for="women" class="woman label">Жінка</label>
                     </td>
                 </tr>
                 <tr>
@@ -175,8 +182,8 @@
                     <td class="komirka"><label class="file kursor" for="download"><input id="download" class="none" type="file" plaseholder="Виберіть файл">Виберіть файл</label></td>
                 </tr>
                 <tr>
-                    <td class="name">Коментарій:</td>
-                    <td class="komirka"><textarea class="mail input" placeholder="Введіть текст повідомлення"></textarea></td>
+                    <td class="name flex"><p class="paragraf">Коментарій:</p></td>
+                    <td class="komirka"><textarea class="mail input focus" maxlength="150" placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
                 <tr>
                     <td class="name"></td>
@@ -192,18 +199,18 @@
                 <tr class="tr">
                     <td class="td">
                         <label for="surname">
-                            Прізвище та ім’я<input type="text" class="input placeholder" id="surname"
+                            Прізвище та ім’я<input type="text" class="input focus placeholder" maxlength="25" id="surname"
                                 placeholder="Василь Вірастюк">
                         </label>
                     </td>
                     <td class="td tdd">
                         <label for="input-post">
-                            Ел. пошта<input class="input" type="text" id="input-post">
+                            Ел. пошта<input class="input focus" type="text" maxlength="25" id="input-post">
                         </label>
                     </td>
                     <td class="td">
                         <label for="input-phone">
-                            Телефон<input class="input" type="text" id="input-post">
+                            Телефон<input class="input focus" type="text" maxlength="15" id="input-post">
                         </label>
                     </td>
                 </tr>
@@ -213,31 +220,34 @@
                 <tr class="tr">
                     <td class="td">
                         <label>Країна
-                            <select class="option input">
+                            <select class="option input focus">
                                 <option>Індонезія</option>
+                                <option>Аргентина</option>
+                                <option>Австрія</option>
+                                <option>Корея</option>
                             </select>
                         </label>
                     </td>
                     <td colspan="2" class="tdd">
                         <label>
-                            Адреса<input class="input" type="text">
+                            Адреса<input class="input focus" maxlength="60" type="text">
                         </label>
                     </td>
                 </tr>
                 <tr class="tr">
                     <td class="td">
                         <label>
-                            Місто<input class="input" type="text">
+                            Місто<input class="input focus" maxlength="25" type="text">
                         </label>
                     </td>
                     <td class="td tdd">
                         <label>
-                            Будинок<input class="input" type="text">
+                            Будинок<input class="input focus" maxlength="25" type="text">
                         </label>
                     </td>
                     <td class="td">
                         <label>
-                            Поштовий індекс<input class="input" type="text">
+                            Поштовий індекс<input class="input focus" maxlength="25" type="text">
                         </label>
                     </td>
                 </tr>
@@ -259,10 +269,10 @@
             <h2>06. фіксована форма</h2>
             <form class="forma6">
                 <label>Логін
-                    <input class="input" type="text">
+                    <input class="input focus" maxlength="25" type="text">
                 </label>
                 <label>Пароль
-                    <input class="input" type="password">
+                    <input class="input focus" maxlength="25" type="password">
                 </label>
                 <p><a href="#" title="якщо забули пароль" class="parol kursor">Забули пароль?</a></p>
                 <p>
