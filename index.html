@@ -15,7 +15,8 @@
         <form class="forma1" action="php/sendmail.php" method="post">
             <p>
                 <label for="name">
-                    <input class="input focus" type="text" maxlength="25" id="name" name="name" placeholder="Введіть ім’я">
+                    <input class="input focus" type="text" maxlength="25" id="name" name="name"
+                        placeholder="Введіть ім’я">
                 </label>
             </p>
             <p>
@@ -23,8 +24,8 @@
                     <input class="input focus" type="email" id="email" name="email" placeholder="Email">
                 </label>
             </p>
-            <p>
-                <label for="city" class="city">
+            <p class="pointer">
+                <label for="city" class="city arrow">
                     <select id="city" class="option input focus">
                         <option>Ваше місто</option>
                     </select>
@@ -150,7 +151,8 @@
                 </tr>
                 <tr>
                     <td class="name">Пароль:</td>
-                    <td class="komirka"><label><input class="input focus" maxlength="25" type="password" placeholder="Введіть не менше 6 символів"></label>
+                    <td class="komirka"><label><input class="input focus" maxlength="25" type="password"
+                                placeholder="Введіть не менше 6 символів"></label>
                     </td>
                 </tr>
                 <tr>
@@ -179,15 +181,20 @@
                 </tr>
                 <tr>
                     <td class="name">Фото:</td>
-                    <td class="komirka"><label class="file kursor" for="download"><input id="download" class="none" type="file" plaseholder="Виберіть файл">Виберіть файл</label></td>
+                    <td class="komirka"><label class="file kursor" for="download"><input id="download" class="none"
+                                type="file" plaseholder="Виберіть файл">Виберіть файл</label></td>
                 </tr>
                 <tr>
-                    <td class="name flex"><p class="paragraf">Коментарій:</p></td>
-                    <td class="komirka"><textarea class="mail input focus" maxlength="150" placeholder="Введіть текст повідомлення"></textarea></td>
+                    <td class="name flex">
+                        <p class="pparagraf">Коментарій:</p>
+                    </td>
+                    <td class="komirka"><textarea class="mail input focus" maxlength="150"
+                            placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
                 <tr>
                     <td class="name"></td>
-                    <td class="komirka"><label for="button"><input class="button kursor" type="submit" id="button" value="Зареєструватися"></label></td>
+                    <td class="komirka"><label for="button"><input class="button kursor" type="submit" id="button"
+                                value="Зареєструватися"></label></td>
                 </tr>
             </table>
         </form>
@@ -199,8 +206,8 @@
                 <tr class="tr">
                     <td class="td">
                         <label for="surname">
-                            Прізвище та ім’я<input type="text" class="input focus placeholder" maxlength="25" id="surname"
-                                placeholder="Василь Вірастюк">
+                            Прізвище та ім’я<input type="text" class="input focus placeholder" maxlength="25"
+                                id="surname" placeholder="Василь Вірастюк">
                         </label>
                     </td>
                     <td class="td tdd">
@@ -234,25 +241,25 @@
                         </label>
                     </td>
                 </tr>
-                <tr class="tr">
-                    <td class="td">
+                <tr class="tr bottom">
+                    <td class="td padding_td">
                         <label>
                             Місто<input class="input focus" maxlength="25" type="text">
                         </label>
                     </td>
-                    <td class="td tdd">
+                    <td class="td padding_td tdd">
                         <label>
                             Будинок<input class="input focus" maxlength="25" type="text">
                         </label>
                     </td>
-                    <td class="td">
+                    <td class="td padding_td">
                         <label>
                             Поштовий індекс<input class="input focus" maxlength="25" type="text">
                         </label>
                     </td>
                 </tr>
             </table>
-            <input id="ok" class="kub none" type="checkbox"> 
+            <input id="ok" class="kub none" type="checkbox">
             <label for="ok" class="p3 label">Я погоджуюсь з правилами оплати та доставки товару
             </label>
             <hr class="hr">
@@ -268,12 +275,12 @@
         <div class="fix">
             <h2>06. фіксована форма</h2>
             <form class="forma6">
-                <label>Логін
-                    <input class="input focus" maxlength="25" type="text">
+                <label for="login">Логін
                 </label>
-                <label>Пароль
-                    <input class="input focus" maxlength="25" type="password">
+                    <input class="input focus" id="login" maxlength="25" type="text">
+                <label class="margin-top" for="parol">Пароль
                 </label>
+                    <input class="input focus" id="parol" maxlength="25" type="password">
                 <p><a href="#" title="якщо забули пароль" class="parol kursor">Забули пароль?</a></p>
                 <p>
                     <input id="cubik" class="input none kub" type="checkbox">
@@ -285,7 +292,7 @@
                         <input class="button knopka buton kursor" type="submit" value="Увійти">
                     </label>
                 </p>
-                </form>
+            </form>
         </div>
     </body>
 
