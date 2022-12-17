@@ -84,10 +84,10 @@
                     <p class="cell input2">Статус</p>
                     <p class="cell">
                         <input type="checkbox" id="new" class="kub none">
-                        <label class="label" for="new">Новинки
+                        <label class="label status" for="new">Новинки
                         </label>
                         <input type="checkbox" id="sale" class="kub none">
-                        <label class="label" for="sale">Акційні товари
+                        <label class="label status" for="sale">Акційні товари
                         </label>
                         <input type="checkbox" id="stock" class="kub none">
                         <label class="label" for="stock">Розпродаж
@@ -96,8 +96,8 @@
                 </div>
                 <div class="row">
                     <p class="cell input2">Дата</p>
-                    <p class="cell">
-                        <input class="date focus" maxlength="25" type="date" id="date" value="2018-03-17">
+                    <p class="cell bottomcell">
+                        <input class="date focus kalendar" maxlength="25" type="date" id="date" value="2018-03-17">
                         <label for="date">
                         </label>
                     </p>
@@ -158,16 +158,18 @@
                 <tr>
                     <td class="name">Місто:</td>
                     <td class="komirka">
-                        <select class="input option focus">
-                            <option>Хмельницький</option>
-                            <option>Житомир</option>
-                            <option>Миколаїв</option>
-                            <option>Суми</option>
-                            <option>Полтава</option>
-                            <option>Кривий Ріг</option>
-                            <option>Одеса</option>
-                            <option>Рівне</option>
-                        </select>
+                        <label class="city arrow">
+                            <select class="input option focus">
+                                <option>Хмельницький</option>
+                                <option>Житомир</option>
+                                <option>Миколаїв</option>
+                                <option>Суми</option>
+                                <option>Полтава</option>
+                                <option>Кривий Ріг</option>
+                                <option>Одеса</option>
+                                <option>Рівне</option>
+                            </select>
+                        </label>
                     </td>
                 </tr>
                 <tr>
@@ -226,7 +228,7 @@
             <table class="forma5">
                 <tr class="tr">
                     <td class="td">
-                        <label>Країна
+                        <label class="city arrow">Країна
                             <select class="option input focus">
                                 <option>Індонезія</option>
                                 <option>Аргентина</option>

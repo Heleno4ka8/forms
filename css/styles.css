@@ -44,6 +44,7 @@ h1 {
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: center;
+    margin-top: 77px;
 }
 
 h2 {
@@ -58,8 +59,8 @@ h2 {
 h3 {
     font-size: 18px;
     color: #1f222c;
-    font-weight: 700;
     font-family: "Roboto";
+    font-weight: 700;
 }
 
 hr {
@@ -91,6 +92,7 @@ input {
     background-color: #ffffff;
     border: 1px solid #3e6aff;
 }
+
 .input {
     width: 100%;
     padding: 13px 17px;
@@ -115,17 +117,20 @@ input {
 .city {
     position: relative;
 }
+
 .arrow::after {
     content: "";
     border: 5px solid transparent;
-    border-top-color:#1f222c; 
+    border-top-color: #1f222c;
     position: absolute;
     top: 7px;
     right: 5%;
 }
+
 .option {
     background-color: transparent;
 }
+
 .kub+label {
     padding-left: 28px;
     position: relative;
@@ -171,6 +176,10 @@ input {
 
 .kub:disabled+label:before {
     background-color: #f7f7f7;
+}
+
+.status {
+    margin-right: 20px;
 }
 
 .forma3 {
@@ -583,7 +592,9 @@ input {
 .date {
     padding: 10px 15px;
     width: 150px;
-    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
 
 .date::-webkit-calendar-picker-indicator {
@@ -613,14 +624,30 @@ input {
     padding-left: 8px;
 }
 
+.forma5 .arrow::after {
+    top: 38px;
+}
+.forma5 .city:before {
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 19px;
+    background-color: #cccccc;
+    right: 30px;
+    top: 31px;
+}
+
 .table>.row {
     display: table-row;
 }
 
 .cell {
-    padding-bottom: 0;
-    padding: 18px;
     position: relative;
+    padding: 18px;
+}
+
+.bottomcell {
+    padding-top: 0;
 }
 
 .table>.row>.cell {
@@ -637,9 +664,10 @@ input {
 
 .fix {
     position: fixed;
-    top: 40px;
-    right: 345px;
+    top: 120px;
+    right: 240px;
 }
+
 .margin-top {
     display: inline-block;
     margin-top: 10px;
